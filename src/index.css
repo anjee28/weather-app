@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: url(./images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.txtBox {
+	@apply placeholder:italic placeholder:text-slate-400 block bg-white border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm;
+}
+
+.btn {
+	@apply bg-slate-300 py-2 px-4 my-4 rounded-full hover:bg-sky-500 hover:border-slate-300 transition-all duration-500;
+}
+
+.cardContainer {
+	@apply grid grid-flow-row gap-8 overflow-x-hidden pl-8 h-full box-border flex-none;
+}
+
+.cardContainer::-webkit-scrollbar {
+	display: none;
+}
+
+.card {
+	@apply px-4 py-4 border-none align-middle justify-center w-48 text-center text-white bg-slate-800 bg-opacity-50 rounded-3xl;
+}
+
+h2 {
+	@apply text-6xl font-black;
+}
