@@ -33,7 +33,7 @@ function Main() {
 		try {
 			const data = await axios
 				.get(
-					`http://api.openweathermap.org/data/2.5/weather?q=${updatedValue}&units=metric&APPID=c38d46369aafd7a9d0b1df3b1c16c77c`
+					`https://api.openweathermap.org/data/2.5/weather?q=${updatedValue}&units=metric&APPID=c38d46369aafd7a9d0b1df3b1c16c77c`
 				)
 				.then((res) => {
 					geoId = res.data.id;
@@ -52,7 +52,7 @@ function Main() {
 		try {
 			const data = await axios
 				.get(
-					`http://api.openweathermap.org/data/2.5/forecast?id=${geoId}&units=metric&appid=c38d46369aafd7a9d0b1df3b1c16c77c`
+					`https://api.openweathermap.org/data/2.5/forecast?id=${geoId}&units=metric&appid=c38d46369aafd7a9d0b1df3b1c16c77c`
 				)
 				.then((res) => {
 					/* console.log(res); */
