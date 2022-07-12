@@ -85,7 +85,7 @@ function Main() {
 	};
 
 	return (
-		<div className="flex flex-row h-screen p-8">
+		<div className="flex flex-row h-screen p-8 bg-slate-800 bg-opacity-50">
 			<div className="flex-1">
 				<div className="my-2 border-slate-400 p-2">
 					{loading ? (
